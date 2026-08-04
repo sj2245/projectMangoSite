@@ -1,0 +1,218 @@
+:root {
+  --pikachu-boxshadow: 0px 0px 1px 0px #231816;
+  --snPro: "SN Pro", sans-serif;
+  --font: var(--snPro);
+  --mangoOrange: 253, 194, 85;
+  --main: rgba(var(--mangoOrange), 1);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#siteHeader {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  overflow: hidden;
+  background-color: var(--main);
+  width: 100%;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+#siteHeader #logo {
+  max-width: 120px;
+  max-height: 120px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  padding-left: 25px;
+  box-sizing: border-box;
+}
+#siteHeader #headerRightSide {
+  font-size: 32px;
+  font-family: "SN Pro", sans-serif;
+  justify-content: space-between;
+  width: 33%;
+  max-width: 33%;
+  display: flex;
+  height: 100%;
+}
+#siteHeader #headerRightSide .linkElement {
+  font-style: normal;
+  text-decoration: none !important;
+  color: black !important;
+  background-color: var(--main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 16px;
+  width: 33.33%;
+  transition: 150ms ease-in-out;
+}
+#siteHeader #headerRightSide .linkElement:hover {
+  font-size: 20px;
+  background-color: #fee5d1;
+}
+#siteHeader #headerBottom {
+  display: none;
+}
+@media (min-width: 768px) {
+  #siteHeader {
+    flex-direction: row;
+  }
+}
+@media (max-width: 768px) {
+  #siteHeader #headerRightSide {
+    display: none !important;
+  }
+  #siteHeader #siteHeader {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+  #siteHeader #headerBottom {
+    display: flex !important;
+    width: 100%;
+    justify-content: center;
+  }
+  #siteHeader #headerBottom .linkElement {
+    height: 100px;
+    width: auto;
+    flex: 1;
+    text-align: center;
+    color: #231816;
+    text-decoration: none;
+  }
+  #siteHeader #headerBottom .linkElement:hover {
+    font-size: 20px;
+    background-color: #fee5d1;
+    transition: 150ms;
+  }
+}
+
+.snPro {
+  font-family: var(--font);
+}
+
+footer {
+  align-items: center;
+  background-color: #4e714e;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+footer p {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #f1f7ed;
+}
+
+#welcomeBanner {
+  background-image: url("placeholder.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#welcomeBanner #welcomeText {
+  font-size: 32px;
+}
+@media (min-width: 800px) {
+  #welcomeBanner #welcomeText {
+    font-size: 60px;
+  }
+}
+
+#jobPostings {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 20px;
+}
+
+#mainSection {
+  background-color: #e0eec6;
+  align-items: center;
+  padding-top: 40px;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 40px;
+}
+#mainSection .jobPosting {
+  background-color: #f1f7ed !important;
+  padding: 25px;
+  border-radius: 20px;
+  border: 10px;
+  border-style: solid;
+  border-color: #4e714e;
+  width: 40%;
+  color: #4e714e;
+}
+@media (max-width: 599px) {
+  #mainSection .jobPosting {
+    border: 5px;
+    border-style: solid;
+  }
+}
+#mainSection .jobPosting p {
+  font-size: 24px;
+}
+#mainSection .jobPosting button {
+  padding: 25px;
+  border: 5px;
+  border-style: solid;
+  border-color: #4e714e;
+  border-radius: 25px;
+}
+#mainSection .jobPosting button a {
+  text-decoration: none;
+  color: #4e714e;
+  font-family: "SN Pro", sans-serif;
+}
+#mainSection #aboutSection {
+  background-color: #f1f7ed !important;
+  padding: 25px;
+  border-radius: 20px;
+  border: 10px;
+  border-style: solid;
+  border-color: #4e714e;
+  color: #4e714e;
+}
+@media (max-width: 599px) {
+  #mainSection #aboutSection {
+    border: 5px;
+    border-style: solid;
+  }
+}
+@media (min-width: 400px) {
+  #mainSection {
+    font-size: 12px;
+  }
+}
+@media (min-width: 600px) {
+  #mainSection {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1000px) {
+  #mainSection {
+    font-size: 32px;
+  }
+}
