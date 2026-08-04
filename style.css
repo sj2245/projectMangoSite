@@ -158,6 +158,15 @@ footer p {
   gap: 20px;
 }
 
+@media (max-width: 599px) {
+  #jobPostings {
+    flex-direction: column !important;
+    width: 100%;
+  }
+  #jobPostings .jobPosting {
+    width: 100% !important;
+  }
+}
 #mainSection {
   background-color: #e0eec6;
   align-items: center;
