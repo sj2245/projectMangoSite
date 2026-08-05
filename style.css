@@ -11,6 +11,10 @@ html, body {
   padding: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 #siteHeader {
   height: 150px;
   display: flex;
@@ -30,8 +34,7 @@ html, body {
   max-height: 120px;
   width: 100%;
   height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   display: block;
   padding-left: 25px;
   box-sizing: border-box;
@@ -87,7 +90,7 @@ html, body {
   #siteHeader #headerRightSide {
     display: none !important;
   }
-  #siteHeader #siteHeader {
+  #siteHeader {
     display: flex;
     flex-direction: column !important;
     justify-content: center;
@@ -97,6 +100,8 @@ html, body {
     display: flex !important;
     width: 100%;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
   #siteHeader #headerBottom .linkElement {
     height: 100px;
@@ -162,9 +167,58 @@ footer p {
   #jobPostings {
     flex-direction: column !important;
     width: 100%;
+    justify-content: center;
+    align-items: center;
   }
   #jobPostings .jobPosting {
     width: 100% !important;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  #mainSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+@media (max-width: 480px) {
+  #siteHeader {
+    min-height: auto;
+  }
+  #siteHeader #logo {
+    padding-left: 0;
+  }
+  #siteHeader #headerBottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+  #siteHeader #headerBottom .linkElement {
+    height: auto;
+    padding: 12px 10px;
+    font-size: 18px;
+    flex: unset;
+    width: 100%;
+  }
+  #welcomeBanner {
+    min-height: 360px;
+  }
+  #mainSection {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  #mainSection .jobPosting {
+    width: 100% !important;
+    max-width: 100%;
+    padding: 18px;
+  }
+  #mainSection .jobPosting p {
+    font-size: 20px;
+  }
+  #mainSection .jobPosting button {
+    width: 100%;
+    padding: 18px;
   }
 }
 #mainSection {
@@ -261,8 +315,7 @@ footer p {
   width: 100%;
   border-radius: 16px;
   margin-bottom: 16px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #mainSection #featureSection .featureCard h2 {
   margin: 0 0 12px;
@@ -301,4 +354,4 @@ footer p {
   #mainSection {
     font-size: 32px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
