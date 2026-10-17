@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --pikachu-boxshadow: 0px 0px 1px 0px #231816;
   --snPro: "SN Pro", sans-serif;
@@ -183,6 +184,10 @@ footer p {
 }
 #mainSection {
   background-color: #e0eec6;
+  background-image: url("images/11651.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   align-items: center;
   padding-top: 40px;
   padding-left: 15%;
