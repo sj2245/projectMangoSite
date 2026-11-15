@@ -12,22 +12,17 @@
 </head>
 <body>
 
-<header id="siteHeader">
-    <a href="index.html">
-        <img id = "logo" src="images/logo.png" alt = "project mango logo">
-    </a>    
-    <div id = "headerRightSide">
-        <a class="snPro linkElement" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/spreadsheets/d/1dIfm-d5BiTTVzzrXf9PMVpd67vmM5en2cyu40_aPJN0/edit?usp=sharing">Database</a>
-        <a class="snPro linkElement" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSfIW1xxjFPTZd0py351BgcGcnY_1nVE3WyOMSr43BdXlPkefQ/viewform?usp=header">Request Tutor</a>
-        <a class="snPro linkElement" href="bios.html">Our Team</a>
-        <a class="snPro linkElement" target="_blank" rel="noopener noreferrer" href="applications.html">Apply</a>
-    </div>
-    <div id="headerBottom">
-        <a class="snPro linkElement" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/spreadsheets/d/1dIfm-d5BiTTVzzrXf9PMVpd67vmM5en2cyu40_aPJN0/edit?usp=sharing">Database</a>
-        <a class="snPro linkElement" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSfIW1xxjFPTZd0py351BgcGcnY_1nVE3WyOMSr43BdXlPkefQ/viewform?usp=header">Request Tutor</a>
-        <a class="snPro linkElement" href="bios.html">Our Team</a>
-        <a class="snPro linkElement" target="_blank" rel="noopener noreferrer" href="applications.html">Apply</a>
-    </div>
+<header id="siteHeader" class="snPro">
+    <a class="siteBrand" href="index.html" aria-label="Project Mango home">
+        <img id="logo" src="images/logo.png" alt="" width="64" height="64">
+        <span>Project Mango</span>
+    </a>
+    <nav class="mainNav" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="bios.html">Our Team</a>
+        <a href="applications.html">Apply</a>
+        <a class="navCta" href="https://docs.google.com/forms/d/e/1FAIpQLSfIW1xxjFPTZd0py351BgcGcnY_1nVE3WyOMSr43BdXlPkefQ/viewform?usp=header" target="_blank" rel="noopener noreferrer">Request a Tutor</a>
+    </nav>
 </header>
 
 <div id="mainSection" class="snPro">
@@ -62,10 +57,29 @@
         </div>
     </section>
 </div>
-<footer>
-    <p class="snPro">
-        Need to contact us? Reach out to officialprojectmango@gmail.com with any inquiries!
-    </p>
+<footer class="siteFooter snPro">
+    <div class="footerGrid">
+        <div class="footerAbout">
+            <a class="footerBrand" href="index.html">Project Mango</a>
+            <p>A youth-led community helping students share knowledge, build confidence, and grow together.</p>
+            <p class="footerEin">EIN: 41-5286249</p>
+        </div>
+        <nav aria-label="Footer navigation">
+            <h2>Get involved</h2>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIW1xxjFPTZd0py351BgcGcnY_1nVE3WyOMSr43BdXlPkefQ/viewform?usp=header" target="_blank" rel="noopener noreferrer">Request a Tutor</a>
+            <a href="applications.html">Join our team</a>
+            <a href="bios.html">Meet our team</a>
+        </nav>
+        <div class="footerContact">
+            <h2>Connect &amp; explore</h2>
+            <a href="https://docs.google.com/spreadsheets/d/1dIfm-d5BiTTVzzrXf9PMVpd67vmM5en2cyu40_aPJN0/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Database</a>
+            <a href="mailto:officialprojectmango@gmail.com">officialprojectmango@gmail.com</a>
+            <p>Reach out with questions, partnership ideas, or ways to support our community.</p>
+        </div>
+    </div>
+    <div class="footerBottom">
+        <span>&copy; 2026 Project Mango</span>
+    </div>
 </footer>
 </body>
 </html>
