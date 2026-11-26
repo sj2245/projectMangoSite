@@ -215,6 +215,8 @@ a:focus-visible {
 .applications-page #jobPostings {
   display: flex !important;
   flex-direction: row !important;
+  justify-content: center;
+  align-items: flex-start;
   gap: 20px;
 }
 
